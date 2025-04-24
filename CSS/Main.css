@@ -19,3 +19,183 @@
 .img-con img:nth-child(even){
     align-self: flex-end;
 }
+.con{
+    margin-top: 10%;
+    border: 2px solid white;
+}
+.heading-con{
+    display: flex;
+}
+.overview-logo-con img{
+    width: 300px;
+    padding: 20px;
+}
+
+
+
+
+/* Overview */
+.topCon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0% 5% 3% 0%;
+}
+.span_con {
+    display: inline-block;
+    width: fit-content;
+    font-size: 2.4rem;
+    color: #E5E5E5;
+    text-align: center;
+}
+
+.spaner {
+    border-right: 3px solid #FCA311;
+    border-bottom: 3px solid #FCA311;
+    padding: 0px 30px 0px 0px;
+    position: relative;
+    right: 20%;
+}
+.imgCon1{
+    padding-right: 3%;
+    padding-bottom: 4%;
+    padding-left: 3%;
+    width: 35%;
+    border-bottom: 5px solid whitesmoke;
+}
+.imgCon1 img{
+    border-radius: 16px;
+    transition: .6s;
+    z-index: -1;
+}
+.imgCon1 img:hover{
+    transform: scale(1.1);
+}
+.textCon1{
+    width: 45%;
+    margin-top: 0%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-0px);
+}
+.divder{
+    border-right: 1px white solid;
+    height: 80vh;
+    margin-top: 0;
+}
+.text1 ,.text2 h1{
+    font-size: 1.7rem;
+}
+.text1 ,.text2 p{
+    font-size: 1.2rem;
+}
+.text1 ,.text2{
+    width: 45%;
+}
+.text1{
+    align-self: flex-end;
+    border-left: 2px solid #FCA311;
+    padding-right: 5%;
+    transition: .6s;
+    margin: 30px;
+}
+.text2{
+    border-right: 2px solid #FCA311;
+    padding-right: 5%;
+    transition: .6s;
+    margin: 20px;
+}
+.text:hover{
+    scale: 1.1;
+}
+#overviewImg{
+    position: relative;
+}
+
+.panel{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+.control-panel{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 25%;
+    border-left: 2px solid white;
+}
+.xi{
+    height: 7vh;
+    width: 70%;
+    background-color: rgb(63, 63, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    transition: 0.3s;
+    font-size: 1.2em;
+}
+#FCB{
+    background: linear-gradient(135deg, #004D98, #A50044 60%, #FDB913);
+    transition: background 0.4s ease;
+}
+#FCB:hover{
+    background: linear-gradient(135deg, #002B5C, #6C002F 60%, #8A6A00);
+}
+#PSG{
+    background: linear-gradient(135deg, #060072, #6922b0);
+    transition: background 0.4s ease;
+}
+#PSG:hover{
+    background: linear-gradient(135deg, #03003D, #4B1680);
+}
+.xi:hover{
+    cursor: pointer;
+}
+.xi span{
+    font-weight: 600;
+    color: whitesmoke;
+}
+.vid-con{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+.vid-con {
+    position: relative;
+    right: 350px;
+    width: 800px;
+}
+
+.vid-con video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+.overlay.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+#FCB:hover .overlay1{
+    display: block;
+}
+#PSG:hover .overlay2{
+    display: block;
+}

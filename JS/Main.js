@@ -39,3 +39,21 @@ function updateProgressBar() {
     bar.style.width = scrolled + '%';
 }
 
+const fcb = document.getElementById('FCB');
+const psg = document.getElementById('PSG');
+const overlay1 = document.querySelector('.overlay1');
+const overlay2 = document.querySelector('.overlay2');
+
+fcb.addEventListener('mouseenter', () => {
+  overlay1.classList.add('show');
+});
+fcb.addEventListener('mouseleave', () => {
+  overlay1.classList.remove('show');
+});
+
+psg.addEventListener('mouseenter', () => {
+  overlay2.classList.add('show');
+});
+psg.addEventListener('mouseleave', () => {
+  overlay2.classList.remove('show');
+});
