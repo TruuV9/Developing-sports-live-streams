@@ -1,1 +1,1 @@
-Make Simulation for personalized control panel 
+في هذا الملف يوجد موقع يوضح الفكرة وسيتم شرحها بالتفصيل يوم العرض.
